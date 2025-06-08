@@ -7,7 +7,9 @@ Before you try and install Windows 7 on your A520 system please make sure your h
 - [ ] AMD Radeon 700M iGPUs
 - [ ] AMD Radeon RX 7000
 - [ ] AMD Radeon 600M iGPUs
+- [ ] AMD Vega iGPUs (Ryzen 4000/5000)
 - [X] AMD Radeon RX 6000
+- [X] AMD Vega iGPUs (Ryzen 2000/3000 / Zen Athlon)
 - [X] AMD Radeon RX 5000
 - [X] AMD Radeon RX 500
 - [X] AMD Radeon RX 400
@@ -40,7 +42,7 @@ Before you try and install Windows 7 on your A520 system please make sure your h
 - [X] NVIDIA GeForce 9
 - [X] NVIDIA GeForce 8
 - [X] NVIDIA GeForce 7 (PCIe)
-- [ ] NVIDIA GeForce 7 (AGP)
+- [ ] NVIDIA GeForce 7 (AGP/PCI)
 - [X] NVIDIA GeForce 6 (PCIe)
-- [ ] NVIDIA GeForce 6 (AGP)
+- [ ] NVIDIA GeForce 6 (AGP/PCI)
 - [ ] NVIDIA GeForce 5 and older
