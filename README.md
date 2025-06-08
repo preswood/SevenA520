@@ -1,17 +1,46 @@
-SEVENA520 PROJECT - RUN WINDOWS 7 ON A520
----------------------------------------------
-
-1 - CHECK IF YOUR HARDWARE IS SUPPORTED
+# SEVENA520 PROJECT - RUN WINDOWS 7 ON A520
+## 1 - CHECK IF YOUR HARDWARE IS SUPPORTED
+### AMD/ATI Graphics (Radeon)
 Before you try and install Windows 7 on your A520 system please make sure your hardware is compatible, specifically your GPU or iGPU:
+- [ ] AMD Radeon RX 9000
+- [ ] AMD Radeon 800M iGPUs
+- [ ] AMD Radeon 700M iGPUs
+- [ ] AMD Radeon RX 7000
+- [ ] AMD Radeon 600M iGPUs
+- [X] AMD Radeon RX 6000
+- [X] AMD Radeon RX 5000
+- [X] AMD Radeon RX 500
+- [X] AMD Radeon RX 400
+- [X] AMD Radeon RX 300
+- [X] AMD Radeon RX 200
+- [X] AMD Radeon HD 7000 / HD 8000
+- [X] AMD Radeon HD 6000
+- [X] ATI Radeon HD 5000
+- [X] ATI Radeon HD 4000
+- [X] ATI Radeon HD 3000
+- [X] ATI Radeon HD 2000
+- [X] ATI Radeon X1000 / X800 / X700 (PCIe)
+- [ ] ATI Radeon X1000 / 8000 / X700 (AGP)
+- [ ] ATI Radeon 9000 and older
 
-SUPPORTED DISCRETE GRAPHICS         PARTIALLY OR NOT SUPPORTED DISCRETE GRAPHICS
-o Radeon RX 200 -> 6000             x Radeon RX 7000 and newer
-o Radeon RX Vega / VII              x Radeon 600 iGPUs and newer
-o Radeon X700 - HD 8000             x AGP ATI cards (Radeon 9000 and older)
-o GeForce GTX 10 - RTX 30           x GeForce RTX 40 and newer
-o GeForce 100 - 900                 x PCI versions of PCIe nVidia cards (GT 210, 520, 610, etc)
-o GeForce 6 (PCIe) - 10             x AGP nVIDIA cards (GeForce 6 AGP and older)
-
-SUPPORTED INTEGRATED GRAPHICS       PARTIALLY OR NOT SUPPORTED INTEGRATED GRAPHICS
-o Radeon Vega (Ryzen 2000/3000)     x Radeon Vega (Ryzen 4000/5000)
-o Radeon Vega (Zen Athlons)
+### NVIDIA Graphics (GeForce)
+- [ ] NVIDIA GeForce RTX 50
+- [ ] NVIDIA GeForce RTX 40
+- [X] NVIDIA GeForce RTX 30
+- [X] NVIDIA GeForce RTX 20 / GTX 16
+- [X] NVIDIA GeForce GTX 10
+- [X] NVIDIA GeForce GTX 900
+- [X] NVIDIA GeForce GTX 700
+- [X] NVIDIA GeForce GTX 600
+- [X] NVIDIA GeForce GTX 500
+- [X] NVIDIA GeForce GTX 400
+- [X] NVIDIA GeForce GTX 300
+- [X] NVIDIA GeForce GTX 200
+- [X] NVIDIA GeForce 10
+- [X] NVIDIA GeForce 9
+- [X] NVIDIA GeForce 8
+- [X] NVIDIA GeForce 7 (PCIe)
+- [ ] NVIDIA GeForce 7 (AGP)
+- [X] NVIDIA GeForce 6 (PCIe)
+- [ ] NVIDIA GeForce 6 (AGP)
+- [ ] NVIDIA GeForce 5 and older
