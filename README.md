@@ -29,7 +29,7 @@ Before you try and install Windows 7 on your A520 system please make sure your h
 - [ ] AMD Radeon RX 7000
 - [ ] AMD Radeon 600M iGPUs
 - [ ] AMD Vega iGPUs (Ryzen 3000/4000/5000)
-- [X] AMD Radeon RX 6000
+- [ ] AMD Radeon RX 6000
 - [X] AMD Vega iGPUs (Ryzen 2000 / Athlon Zen)
 - [X] AMD Radeon RX 5000
 - [X] AMD Radeon RX 500
@@ -115,8 +115,22 @@ Before you update Windows using the included update file you must first run **wu
 ### 4.3 - Update Windows manually
 Most drivers won't work unless you have update KB4474419 v3. As such it's included in the Seven500 zip file to extract. Please run the update file and restart your computer.
 
-### 4.4 - Install chipset software
+### 4.4 - Disable windows update
+1. Open the start menu, type "Windows Update", select Windows Update and hit enter
+2. Go to "Change Settings"
+3. Go to the drop down menu under "Important Updates" and select the last option ("Never check for updates")
+4. Press OK and reboot
+
+### 4.5 - Install chipset software
 Included in the zip is a driver installer for the X470 chipset. Despite it being for X470 it works flawlessly on A520, B550 and X570. Run and install **amd_chipset_softare.exe** included in the zip file. Note that you may have to enable arrow keys if TAB doesn't work in the installer. If the installer doesn't start at all it may be necessary to run **vc_redist.x64.exe**. Once the installer has finished you must reboot your computer.
 
-### 4.5 - Manually installing the final missing drivers
-You've reached the last step, but you mustn't cheer yet. You need to install the last missing drivers, **manually**. Open device manager and check if there are any devices with missing drivers.
+### 4.6 - Manually installing the final missing drivers
+You've reached the last step, but you mustn't cheer yet. You need to install the last missing drivers, **manually**. Open device manager and check if there are any devices with missing drivers. Such devices will be placed under "Other Devices" with a warning icon in the bottom right of their icon. If there are none then hooray! You've finished! Otherwise, to install the missing drivers you must:
+1. Select the device from the list and double click / press enter
+2. In the new window press / enter "Update drivers"
+3. In the driver update window select to search the driver within the computer
+4. Enter the directory of the "drivers" folder within the extracted zip folder
+5. Make sure that searching subfolders is enabled and press next
+6. If the software found any valid drivers the window should say "Installing drivers"
+7. wait for the installation to complete and press install on any popup windows that appear
+8. Repeat the process for all the missing devices
