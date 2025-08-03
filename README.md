@@ -1,6 +1,25 @@
 #### Notice 02/05/2025: this project has been renamed from SevenA520 to Seven500.
 # SEVEN500 - Running Windows 7 on A520, B550 and X570
-## 1 - Check if your graphics device is supported
+
+## About
+*Seven500* is a project that provides the necessary software to get Windows 7 running on AMD AM4 500 chipsets. Note that the drivers and installers included are **NOT** developed by me. Some people use Windows 7 for the vibes, others **need** it to run software that won't work on newer systems such as medical staff or accountants. No matter what you wish to do, this project is here to do its best to help you.
+
+## Requirements (DO NOT SKIP)
+It is absolutely crucial that you have:
+
+- a copy of Windows 7 on a **DVD** (AMD 500 USB ports don't work on Windows 7 out of the box)
+- a SATA DVD reader (again, USB doesn't work)
+- a PS/2 mouse or keyboard
+- a motherboard with CSM enabled
+- a SATA HDD/SSD (PCI-E and NVM-E drives might work but you'll run into a myriad of problems)
+
+## 1 - Check if your motherboard has a PS/2 port
+Given the age difference between Windows 7 and the AMD 500 chipsets USB ports are a no-go. As such if your machine does not have at least one PS/2 port it may become impossible to install and use Windows 7. The rest of the readme assumes that you only have a PS/2 keyboard, however if you also / only have a PS/2 mouse you can still follow the instructions.
+
+## 2 - Check if your graphics device is supported
+> [!NOTE]
+> If your device isn't listed consult the manufacturer's website (AMD/NVIDIA)
+
 Before you try and install Windows 7 on your A520 system please make sure your hardware is compatible, specifically your GPU or iGPU:
 
 ### AMD/ATI Graphics (Radeon)
@@ -50,3 +69,24 @@ Before you try and install Windows 7 on your A520 system please make sure your h
 - [ ] NVIDIA GeForce 6 (AGP/PCI)
 - [ ] NVIDIA GeForce 5 and older
 - [ ] Other NVIDIA AGP cards
+
+## 3 - Installing Windows 7
+It is absolutely crucial that you install an ***x64*** version of ***STOCK*** Windows 7. No bootlegs. No modded versions. Just bog standard Windows 7. Here is a list of tested versions that should work just fine:
+
+- Windows 7 Ultimate SP1
+- Windows 7 Professional SP1
+- Windows 7 Home Premium SP1
+- Windows 7 Enterprise SP1
+
+If you don't have a copy of Windows 7 you can download it from [here](https://massgrave.dev/windows_7_links).
+If you don't have a mouse remember that you can still use TAB to navigate through both the installer and Windows in general.
+
+## 4 - Installing drivers
+Download, copy and extract the zip included in the release files from another OS (Linux on a USB, Windows on another drive, etc) onto the new Windows 7 drive. You can place it anywhere but for convenience it's best to place it into Windows 7's "C:" drive. Once you've done that we'll get Windows 7 ready for the driver installations.
+
+### 
+
+### 4.2 - WUFUC
+Before you update Windows using the included update file you must first run **wufuc.exe*** to disable the CPU check. This is because the windows update we need checks your CPU before installing and because it doesn't recognise Ryzen CPUs it halts and gives errors. To bypass this you must install wufuc. You can find the executable in the extracted folder.
+
+### 4.3 - 
