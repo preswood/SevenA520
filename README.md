@@ -1,4 +1,4 @@
-### Notice: Starting August 2025 this project has been renamed from SevenA520 to Seven500.
+#### Notice 02/05/2025: this project has been renamed from SevenA520 to Seven500.
 # SEVEN500 - Running Windows 7 on A520, B550 and X570
 ## 1 - CHECK IF YOUR HARDWARE IS SUPPORTED
 ### AMD/ATI Graphics (Radeon)
