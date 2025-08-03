@@ -85,6 +85,10 @@ If you don't have a mouse remember that you can still use TAB to navigate throug
 Download, copy and extract the zip included in the release files from another OS (Linux on a USB, Windows on another drive, etc) onto the new Windows 7 drive. You can place it anywhere but for convenience it's best to place it into Windows 7's "C:" drive. Once you've done that we'll get Windows 7 ready for the driver installations.
 
 ### 4.1 - Turning off driver signature enforcement
+
+> [!CAUTION]
+> This step alone is considered a massive cybersecurity risk as it allows malicious software to run even on a hardware level. 
+
 Most drivers necessary for AMD 500 chipsets are unsigned, as such it's necessary to turn off driver signage checks. To do so there are two methods (USE ONLY ONE):
 
 ### 4.1A - using the Group Policy Editor (GPEDIT.MSC)
@@ -106,6 +110,13 @@ Most drivers necessary for AMD 500 chipsets are unsigned, as such it's necessary
 4. close the command prompt and reboot your computer
 
 ### 4.2 - WUFUC
-Before you update Windows using the included update file you must first run **wufuc.exe*** to disable the CPU check. This is because the windows update we need checks your CPU before installing and because it doesn't recognise Ryzen CPUs it halts and gives errors. To bypass this you must install wufuc. You can find the executable in the extracted folder.
+Before you update Windows using the included update file you must first run **wufuc.exe*** to disable the CPU check. This is because the windows update we need checks your CPU before installing and because it doesn't recognise Ryzen CPUs it halts and gives errors. To bypass this you must install wufuc. You can find the installer's executable in the extracted folder. (Memo: if you don't have a mouse use TAB to navigate)
 
-### 4.3 - 
+### 4.3 - Update Windows manually
+Most drivers won't work unless you have update KB4474419 v3. As such it's included in the Seven500 zip file to extract. Please run the update file and restart your computer.
+
+### 4.4 - Install chipset software
+Included in the zip is a driver installer for the X470 chipset. Despite it being for X470 it works flawlessly on A520, B550 and X570. Run and install **amd_chipset_softare.exe** included in the zip file. Note that you may have to enable arrow keys if TAB doesn't work in the installer. If the installer doesn't start at all it may be necessary to run **vc_redist.x64.exe**. Once the installer has finished you must reboot your computer.
+
+### 4.5 - Manually installing the final missing drivers
+You've reached the last step, but you mustn't cheer yet. You need to install the last missing drivers, **manually**. Open device manager and check if there are any devices with missing drivers.
