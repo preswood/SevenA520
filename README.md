@@ -1,4 +1,5 @@
-# SEVENA520 PROJECT - RUN WINDOWS 7 ON A520
+### Notice: Starting August 2025 this project has been renamed from SevenA520 to Seven500.
+# SEVEN500 - Running Windows 7 on A520, B550 and X570
 ## 1 - CHECK IF YOUR HARDWARE IS SUPPORTED
 ### AMD/ATI Graphics (Radeon)
 Before you try and install Windows 7 on your A520 system please make sure your hardware is compatible, specifically your GPU or iGPU:
@@ -7,9 +8,9 @@ Before you try and install Windows 7 on your A520 system please make sure your h
 - [ ] AMD Radeon 700M iGPUs
 - [ ] AMD Radeon RX 7000
 - [ ] AMD Radeon 600M iGPUs
-- [ ] AMD Vega iGPUs (Ryzen 4000/5000)
+- [ ] AMD Vega iGPUs (Ryzen 3000/4000/5000)
 - [X] AMD Radeon RX 6000
-- [X] AMD Vega iGPUs (Ryzen 2000/3000 / Zen Athlon)
+- [X] AMD Vega iGPUs (Ryzen 2000 / Athlon Zen)
 - [X] AMD Radeon RX 5000
 - [X] AMD Radeon RX 500
 - [X] AMD Radeon RX 400
@@ -24,6 +25,7 @@ Before you try and install Windows 7 on your A520 system please make sure your h
 - [X] ATI Radeon X1000 / X800 / X700 (PCIe)
 - [ ] ATI Radeon X1000 / 8000 / X700 (AGP)
 - [ ] ATI Radeon 9000 and older
+- [ ] Other ATI AGP cards
 
 ### NVIDIA Graphics (GeForce)
 - [ ] NVIDIA GeForce RTX 50
@@ -46,3 +48,4 @@ Before you try and install Windows 7 on your A520 system please make sure your h
 - [X] NVIDIA GeForce 6 (PCIe)
 - [ ] NVIDIA GeForce 6 (AGP/PCI)
 - [ ] NVIDIA GeForce 5 and older
+- [ ] Other NVIDIA AGP cards
