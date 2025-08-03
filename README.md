@@ -84,7 +84,26 @@ If you don't have a mouse remember that you can still use TAB to navigate throug
 ## 4 - Installing drivers
 Download, copy and extract the zip included in the release files from another OS (Linux on a USB, Windows on another drive, etc) onto the new Windows 7 drive. You can place it anywhere but for convenience it's best to place it into Windows 7's "C:" drive. Once you've done that we'll get Windows 7 ready for the driver installations.
 
-### 
+### 4.1 - Turning off driver signature enforcement
+Most drivers necessary for AMD 500 chipsets are unsigned, as such it's necessary to turn off driver signage checks. To do so there are two methods (USE ONLY ONE):
+
+### 4.1A - using the Group Policy Editor (GPEDIT.MSC)
+1. Type Win+R
+2. Type `gpedit.msc` and press enter
+3. Using TAB and the arrow keys (or your mouse if you have one) navigate to User Configuration
+4. Then go to Administrative Templates
+5. Then go to System
+6. Then go to Driver Installation
+7. Then select and open Code Signing for Drivers
+8. In the new window enable the radio button "Enabled" and select "Ignore" from the menu below
+9. Click Ok and close everything
+10. Restart your computer
+
+### 4.1B - using Boot Configuration Data Editor (BCDEDIT.EXE)
+1. Open the command prompt ***as administrator***
+2. execute `bcdedit.exe -set loadoptions DISABLE_INTEGRITY_CHECKS`
+3. after that execute `bcdedit.exe -set TESTSIGNING ON`
+4. close the command prompt and reboot your computer
 
 ### 4.2 - WUFUC
 Before you update Windows using the included update file you must first run **wufuc.exe*** to disable the CPU check. This is because the windows update we need checks your CPU before installing and because it doesn't recognise Ryzen CPUs it halts and gives errors. To bypass this you must install wufuc. You can find the executable in the extracted folder.
