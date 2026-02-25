@@ -8,8 +8,8 @@
 It is absolutely crucial that you have:
 
 - a copy of Windows 7 on a **DVD** (AMD 500 USB ports don't work on Windows 7 out of the box)
-- a SATA DVD reader (again, USB doesn't work)
-- a PS/2 mouse or keyboard
+- a SATA DVD reader (avoid using USB or IDE adapters)
+- a PS/2 mouse or keyboard (Legacy USB setting in BIOS often doesn't work as intended)
 - a motherboard with CSM enabled
 - a SATA HDD/SSD (PCI-E and NVM-E drives might work but you'll run into a myriad of problems)
 
@@ -22,7 +22,7 @@ Given the age difference between Windows 7 and the AMD 500 chipsets USB ports ar
 
 Before you try and install Windows 7 on your A520 system please make sure your hardware is compatible, specifically your GPU or iGPU:
 
-### AMD/ATI Graphics (Radeon)
+### AMD/ATi Graphics (Radeon)
 - [ ] AMD Radeon RX 9000
 - [ ] AMD Radeon 800M iGPUs
 - [ ] AMD Radeon 700M iGPUs
@@ -45,7 +45,23 @@ Before you try and install Windows 7 on your A520 system please make sure your h
 - [X] ATI Radeon X1000 / X800 / X700 (PCIe)
 - [ ] ATI Radeon X1000 / 8000 / X700 (AGP)
 - [ ] ATI Radeon 9000 and older
-- [ ] Other ATI AGP cards
+- [ ] Other ATi AGP/AGP cards
+
+### AMD/ATi Graphics (by architecture)
+- [ ] RDNA 4
+- [ ] RDNA 3
+- [X] RDNA 2
+- [X] RDNA 1
+- [X] GCN 5 (Vega)
+- [X] GCN 4 (Polaris)
+- [X] GCN 3
+- [X] GCN 2
+- [X] GCN 1
+- [X] Terascale 3
+- [X] Terascale 2
+- [X] Terascale 1
+- [X] UltraThreaded SE / R400 / R500 PCIe
+- [ ] UltraThreaded SE AGP/PCI variants
 
 ### NVIDIA Graphics (GeForce)
 - [ ] NVIDIA GeForce RTX 50
@@ -68,7 +84,7 @@ Before you try and install Windows 7 on your A520 system please make sure your h
 - [X] NVIDIA GeForce 6 (PCIe)
 - [ ] NVIDIA GeForce 6 (AGP/PCI)
 - [ ] NVIDIA GeForce 5 and older
-- [ ] Other NVIDIA AGP cards
+- [ ] Other NVIDIA AGP/PCI cards
 
 ## 3 - Installing Windows 7
 It is absolutely crucial that you install an ***x64*** version of ***STOCK*** Windows 7. No bootlegs. No modded versions. Just bog standard Windows 7. Here is a list of tested versions that should work just fine:
